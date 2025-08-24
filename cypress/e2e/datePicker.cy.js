@@ -24,6 +24,7 @@ describe("", () => {
     cy.visit(Cypress.env("dragAndDrop"));
     cy.drangAndDropp("h5[class='ui-widget-header']", "div[class='ui-widget-content ui-state-default ui-droppable']")
   });
+  
    it("use custom commands for drana and drop123", () => {
     cy.visit(Cypress.env("dragAndDrop"));
     cy.drangAndDropp("h5[class='ui-widget-header']", "div[class='ui-widget-content ui-state-default ui-droppable']")
