@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("drangAndDropp", (dragFirstEle, dragSecondEle) => {
+  const dataTransfer = new DataTransfer();
+  cy.get("iframe.demo-frame").then($iframe => {
+    const body = $iframe.contents().find("body")
+    cy.wrap(body).as("iframe")
+  });
+  cy.get("@iframe").find(dragFirstEle).first().trigger("dragstart", { dataTransfer })
+  cy.get("@iframe").find(dragSecondEle).trigger("drop", { dataTransfer })
+
+});
