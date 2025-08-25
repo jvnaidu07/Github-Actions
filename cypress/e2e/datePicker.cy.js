@@ -1,10 +1,15 @@
 /// <reference types = "cypress"/>
 
+import storeEle from "./locators";
+
+
+
+const dateDetails = new storeEle;
 describe("", () => {
   const dataTransfer = new DataTransfer();
   it("Navihate to date picker", () => {
     cy.visit(Cypress.env("baseUrl"));
-    cy.get("input[type='text']").type(Date.now() + '{enter}')
+    dateDetails.enterTodayDate().type(Date.now() + '{enter}')
   })
 
 
@@ -25,9 +30,9 @@ describe("", () => {
     cy.drangAndDropp("h5[class='ui-widget-header']", "div[class='ui-widget-content ui-state-default ui-droppable']")
   });
   
-   it("use custom commands for drana and drop123", () => {
+   it.only("use custom commands for drana and drop123", () => {
     cy.visit(Cypress.env("dragAndDrop"));
-    cy.drangAndDropp("h5[class='ui-widget-header']", "div[class='ui-widget-content ui-state-default ui-droppable']")
+    cy.drangAndDropp(dateDetails.column1, dateDetails.column2)
   })
 })
 
