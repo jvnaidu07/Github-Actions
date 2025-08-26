@@ -29,10 +29,15 @@ describe("", () => {
     cy.visit(Cypress.env("dragAndDrop"));
     cy.drangAndDropp("h5[class='ui-widget-header']", "div[class='ui-widget-content ui-state-default ui-droppable']")
   });
-  
-   it.only("use custom commands for drana and drop123", () => {
+
+  it("use custom commands for drana and drop123", () => {
     cy.visit(Cypress.env("dragAndDrop"));
     cy.drangAndDropp(dateDetails.column1, dateDetails.column2)
+  });
+  it.only("dropdown selection", () => {
+    cy.visit(Cypress.env("dropDown"));
+    dateDetails.selectCountryfromDropdown().select('India').should('have.value', 'IND')
+
   })
 })
 
