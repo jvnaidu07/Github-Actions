@@ -5,6 +5,9 @@ class storeEle{
     enterTodayDate() {
         return cy.get("input[type='text']")
     }
+    selectCountryfromDropdown() {
+        return cy.get("select")
+    }
     
 }
 
