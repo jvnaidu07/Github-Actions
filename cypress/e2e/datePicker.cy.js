@@ -36,7 +36,11 @@ describe("", () => {
   });
   it.only("dropdown selection", () => {
     cy.visit(Cypress.env("dropDown"));
-    dateDetails.selectCountryfromDropdown().select('India').should('have.value', 'IND')
+
+    Cypress._.times(3, () => {
+      dateDetails.selectCountryfromDropdown().select('India').should('have.value', 'IND');
+    })
+
 
   })
 })
