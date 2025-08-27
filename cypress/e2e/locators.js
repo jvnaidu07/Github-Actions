@@ -8,6 +8,13 @@ class storeEle{
     selectCountryfromDropdown() {
         return cy.get("select")
     }
+    fiveElelments(Index) {
+        return cy.get("div[class='resp-tabs-container'] div a").eq(Index)
+    }
+    clickOnWindowsButton() {
+        return this.fiveElelments(1)
+    }
+
     
 }
 
