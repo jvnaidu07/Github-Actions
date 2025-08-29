@@ -8,7 +8,9 @@ module.exports = defineConfig({
       dropDown: "https://www.globalsqa.com/demo-site/select-dropdown-menu/",
       fileUpload: "https://tus.io/demo",
       windowsHandle: "https://www.globalsqa.com/demo-site/frames-and-windows/",
-      accordion: "https://www.globalsqa.com/demo-site/accordion-and-tabs/#Simple%20Accordion"
+      accordion: "https://www.globalsqa.com/demo-site/accordion-and-tabs/#Simple%20Accordion",
+      dialogBox : "https://www.globalsqa.com/demo-site/dialog-boxes/",
+      cypressHooks: "https://testgrid.io/blog/cypress-testing/"
     },
     setupNodeEvents(on, config) {
       // implement node event listeners here

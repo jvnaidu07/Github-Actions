@@ -3,6 +3,8 @@ class storeEle {
     column1 = "h5[class='ui-widget-header']"
     column2 = "div[class='ui-widget-content ui-state-default ui-droppable']";
     AllAccordions = "span[class='ui-accordion-header-icon ui-icon ui-icon-triangle-1-e']"
+    abcd = "button[class='ui-button ui-corner-all ui-widget']"
+    clearAllFileds = "input[class='text ui-widget-content ui-corner-all']"
     FirstAcco = this.AllAccordions;
     accordions1(Index) {
         return cy.get(this.AllAccordions, { timeout: 60000 }).eq(Index)
