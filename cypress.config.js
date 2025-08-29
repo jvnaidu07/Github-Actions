@@ -10,7 +10,8 @@ module.exports = defineConfig({
       windowsHandle: "https://www.globalsqa.com/demo-site/frames-and-windows/",
       accordion: "https://www.globalsqa.com/demo-site/accordion-and-tabs/#Simple%20Accordion",
       dialogBox : "https://www.globalsqa.com/demo-site/dialog-boxes/",
-      cypressHooks: "https://testgrid.io/blog/cypress-testing/"
+      cypressHooks: "https://testgrid.io/blog/cypress-testing/",
+      mouseActions: "https://vinothqaacademy.com/mouse-event/"
     },
     setupNodeEvents(on, config) {
       // implement node event listeners here
