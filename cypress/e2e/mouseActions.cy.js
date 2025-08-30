@@ -17,9 +17,5 @@ describe("", () => {
         cy.get("button[id='rightclick']").rightclick();
         cy.contains("Registration Form Alert Popup Mouse Event").should('contain.text', 'Registration Form')
     });
-    it.only("mouse hover", () => {
-        cy.visit("https://vinothqaacademy.com/mouse-event/")
-        moseAction.mouseHover().last().realHover()
-        
-    })
+    
 });
