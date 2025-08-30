@@ -32,7 +32,10 @@ class storeEle {
     firstAccordion() {
         return this.accordions(0)
     }
+    mouseHover() {
 
+    return cy.get("li[class='menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6374']")
+}
 }
 
 export default storeEle;
