@@ -10,7 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^14.5.3",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "neat-csv": "^7.0.0"
   },
   "dependencies": {
     "cypress-real-events": "^1.14.0"
