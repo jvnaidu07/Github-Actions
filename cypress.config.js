@@ -1,5 +1,4 @@
 const { defineConfig } = require("cypress");
-
 module.exports = defineConfig({
   e2e: {
     env: {
@@ -11,9 +10,11 @@ module.exports = defineConfig({
       accordion: "https://www.globalsqa.com/demo-site/accordion-and-tabs/#Simple%20Accordion",
       dialogBox : "https://www.globalsqa.com/demo-site/dialog-boxes/",
       cypressHooks: "https://testgrid.io/blog/cypress-testing/",
-      mouseActions: "https://vinothqaacademy.com/mouse-event/"
+      mouseActions: "https://vinothqaacademy.com/mouse-event/",
+      fillingTextWithCSVfIle: "https://demo.guru99.com/test/newtours/register.php"
     },
     setupNodeEvents(on, config) {
+    
       // implement node event listeners here
     },
   },
